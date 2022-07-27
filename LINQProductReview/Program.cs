@@ -16,6 +16,7 @@ List<ProductReview> productReviewList = new List<ProductReview>()
                 new ProductReview(){ProducID=8,UserID=1,Rating=9,Review="nice",isLike=true},
                 new ProductReview(){ProducID=2,UserID=1,Rating=10,Review="nice",isLike=true},
                 new ProductReview(){ProducID=10,UserID=1,Rating=8,Review="nice",isLike=true}
+
 };
 productReviewList.Add(new ProductReview() { ProducID = 11, UserID = 1, Rating = 3, Review = "nice", isLike = true });
 
@@ -35,6 +36,9 @@ management.SkipRecord(productReviewList);
 Console.ReadLine();
 //UC7
 management.DataTables();
+Console.ReadLine();
+//UC8
+management.AvgRating(productReviewList);
 Console.ReadLine();
 
 
