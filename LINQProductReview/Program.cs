@@ -1,6 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using LINQProductReview;
-
 Console.WriteLine("Welcome to product review management");
 
 //UC1
@@ -28,6 +26,8 @@ Management management = new Management();
 //management.TopRecords(productReviewList);
 
 //UC3
-management.SelectedRecords(productReviewList);
+//management.SelectedRecords(productReviewList);
+//UC4
+//management.RetrieveCountOfRecords(productReviewList);
 
 
