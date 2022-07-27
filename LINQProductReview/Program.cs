@@ -5,7 +5,7 @@ Console.WriteLine("Welcome to product review management");
 
 //UC1
 List<ProductReview> productReviewList = new List<ProductReview>()
-            {
+{
                 new ProductReview(){ProducID=1,UserID=1,Rating=2,Review="Good",isLike=true},
                 new ProductReview(){ProducID=2,UserID=1,Rating=4,Review="Good",isLike=true},
                 new ProductReview(){ProducID=3,UserID=1,Rating=5,Review="Good",isLike=true},
@@ -17,17 +17,20 @@ List<ProductReview> productReviewList = new List<ProductReview>()
                 new ProductReview(){ProducID=2,UserID=1,Rating=10,Review="nice",isLike=true},
                 new ProductReview(){ProducID=10,UserID=1,Rating=8,Review="nice",isLike=true}
 
-
-            };
+};
+            
 productReviewList.Add(new ProductReview() { ProducID = 11, UserID = 1, Rating = 3, Review = "nice", isLike = true });
-
-
 
 //UC2
 Management management = new Management();
-//management.TopRecords(productReviewList);
+management.TopRecords(productReviewList);
 
 //UC3
 management.SelectedRecords(productReviewList);
+//UC4
+management.RetrieveCountOfRecords(productReviewList);
+//UC5
+management.RetriveProductIdAndReview(productReviewList);
+Console.ReadLine();
 
 
